@@ -24,7 +24,7 @@ AVAILABLE_LANGS = [
 def calc_codebleu(
     references: Union[List[str], List[List[str]]],
     predictions: List[str],
-    lang: str=None,
+    lang: str,
     weights: Tuple[float, float, float, float] = (0.25, 0.25, 0.25, 0.25),
     tokenizer: Optional[Callable] = None,
     keywords_dir: Path = PACKAGE_DIR / "keywords",
