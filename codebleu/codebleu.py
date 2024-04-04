@@ -93,10 +93,10 @@ def calc_codebleu(
         + theta * (dataflow_match_score or 1)
     )
 
-    return {
-        "codebleu": code_bleu_score
+    return code_bleu_score #{
+     #   "codebleu": code_bleu_score
       #  "ngram_match_score": ngram_match_score,
       # "weighted_ngram_match_score": weighted_ngram_match_score,
       #  "syntax_match_score": syntax_match_score,
       #  "dataflow_match_score": dataflow_match_score,
-    }
+    #}
